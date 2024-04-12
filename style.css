@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-image: url("../images/fundo.jpg");
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 1080px;
+    width: 80%;
+    max-height: auto;
+    height: 80%;
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 8%;
+}
+.container h1{
+    font-size: 2em;
+}
+
+.container img{
+    max-width: 420px;
+    width: 100%;
+}
+
+
+.container p, h2{
+    color: white;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    width: 30%;
+    padding: 0.5em;
+    border: transparent;
+    border-radius: 5px;
+    background-color: #B6E0D6; 
+    
+}
+
+.container button i{
+    font-size: 100%;
+    padding: 1%;
+}
+
+@media (max-width: 768px){
+    .container{
+        align-items: flex-start;
+    }
+
+    .container h1{
+        font-size: 1.7rem;
+    }
+
+    .container button{
+        width: 100%;
+        font-size: 80%;
+    }
+
+    .container button i{
+        display: none;
+    }
+
+}
+
+

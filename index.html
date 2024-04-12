@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+            crossorigin="anonymous" />
+        <script src="https://kit.fontawesome.com/bdbe516e40.js"
+            crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Dogciclopédia</h1>
+
+            <div id="photo">
+                <picture>
+                    <img src="./#" id="image" alt="Foto de um cachorro" />
+                </picture>
+            </div>
+
+            <h2>Raça: <span id="nome"></span></h2>
+            <p>Temperamento: <span id="temperamento"></span></p>
+            <p>Peso: <span id="peso"></span></p>
+            <p>Tempo de vida: <span id="tempo-de-vida"></span></p>
+            
+
+            <button id="new-dog" onclick="api()">
+                Conhecer outro doguinho
+                <i class="fa-solid fa-paw"></i>
+            </button>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
